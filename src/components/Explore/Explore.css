@@ -1,0 +1,16 @@
+
+.explore{
+    height: 100vh;
+}
+.explore-heading{
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.card-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-size: cover;
+}

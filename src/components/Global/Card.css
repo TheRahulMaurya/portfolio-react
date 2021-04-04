@@ -1,0 +1,29 @@
+.card-item{
+    width:23.3%vw;
+    margin: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding:2.5% 1%;
+    border: 0.2rem solid rgba(0, 0, 0, 0.082);
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 0.5rem;
+}
+
+.card-item:hover{
+    transform: scale(1.02);
+}
+
+ion-icon {
+    margin-left: 5rem;
+    color: #e67e22;
+    height: 3rem;
+    width: 3rem;
+}
+
+.card-heading{
+    font-weight: 800;
+}
+
+.card-content{
+    font-size: medium;
+}

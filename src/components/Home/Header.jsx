@@ -8,10 +8,12 @@ const Header = () => {
             <Nav />
             <div className="header-content">
                 <h1 className="heading">
-                   Welcome, Have a nice day.
+                   Wanna touch the sky!!
                 </h1>
-                <Button className="btn-light" href = "#" label = "Button 1" />
-                <Button className="btn-dark" href = "#" label = "Button 2" />
+                <div className="btn-container">
+                    <Button className="btn-light" href = "#" label = "Touch Me" />
+                    <Button className="btn-dark" href = "#" label = "Explore Me" />
+                </div>
             </div>
         </header>
     )
