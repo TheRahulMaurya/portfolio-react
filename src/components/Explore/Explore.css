@@ -1,16 +1,19 @@
 
 .explore{
-    height: 100vh;
+    height: 75vh;
 }
 .explore-heading{
     padding: 2rem;
     text-align: center;
+}
 
+.explore-heading::before{
+    height: 10px;
+    width: 10px;
+    background: yellow;
 }
 
 .card-container{
     margin: 0;
     padding: 0;
-    display: flex;
-    background-size: cover;
 }

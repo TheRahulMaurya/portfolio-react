@@ -1,11 +1,11 @@
 import './Card.css';
 
-const Card = ({icon, heading, content}) =>{
+const Card = ({className, icon, heading, content}) =>{
     return(
-        <div className="card-item">
+        <div className={`card-item ${className}`}>
             <ion-icon name={icon}></ion-icon>
-            <h2 className="card-headind">{heading}</h2>
-            <h4 className="card-content">{content}</h4>
+            <h3 className="card-heading">{heading}</h3>
+            <p className="card-content">{content}</p>
         </div>
     )
 }

@@ -1,12 +1,12 @@
+import './ToolTip.css';
 
-const ToolTip = () => {
+const ToolTip = ({className, tip}) => {
 
     return(
-        <div className="tool-tip">
-            <span className="tool-tip-text"></span>
+        <div className={className}>
+            <span className="tool-tip">{tip}</span>
         </div>
     )
 }
-
 
 export default ToolTip;

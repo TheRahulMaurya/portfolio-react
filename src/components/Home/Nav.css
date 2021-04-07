@@ -2,7 +2,10 @@ nav {
  color : #fff;
  display: flex;
  padding: 0.4rem;
- background: rgba(0, 0, 0, 0.418);
+ background: rgba(0, 0, 0, 0.699);
+ position: fixed;
+ width: 100vw;
+ z-index: 999;
 }
 
 ul{
