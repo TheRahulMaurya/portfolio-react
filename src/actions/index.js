@@ -1,5 +1,11 @@
-import {selectDetailAction} from './selectDetailAction'
+import { SELECT_DETAIL } from "../constants/ActionTypes";
 
-export const selectDetail = () => {
-    return selectDetailAction;
-};
+
+// Action called when a card is selected and returns the selected detail
+export const selectDetail = (detail) =>{
+    console.log("inside selectDetail");
+    return{
+        type: SELECT_DETAIL,
+        payload: detail
+    }
+}

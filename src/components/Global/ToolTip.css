@@ -1,6 +1,7 @@
 .tip-container-right{
-    margin-left: 120%;
-    margin-top: 20%;
+    position: absolute;
+    left: 120%;
+    top: 20%;
     visibility: hidden;
     transition: 0.5s ease;
 }
@@ -15,8 +16,8 @@
     font-size: small;
     width: max-content;
     height: max-content;
-    display: inline-block;
     background:rgba(0, 0, 0, 0.548);
     padding: 0.2rem 0.4rem;
     border-radius: 1rem;
+    color: #fff;
 }

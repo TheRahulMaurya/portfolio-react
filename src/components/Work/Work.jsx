@@ -1,22 +1,22 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import {selectDetail} from '../../actions'
+import { BACKEND_IMAGE } from '../../constants/ImageResources';
+import AnimatedCard from '../Global/AnimatedCard';
+import './Work.css'
 
 // Main Component for Work section
 class Work extends Component{
     render(){
-        return this.props.details.map(detail => {
-                            return(
-                                <input 
-                                type="button"
-                                value={detail.profile}
-                                onClick={() => {
-                                    this.props.selectDetail(detail);
-                                    console.log("detail : ", detail);
-                                    console.log(this.props.details);
-                                }}/>
-                            )
-                        })
+        return(
+            <div>
+                <AnimatedCard
+                    imgSouce={BACKEND_IMAGE} 
+                    heading = {"Backend Developer"}
+                    content = {"Place some content here."}
+                />
+            </div>
+        )
     }
 }
 

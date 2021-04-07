@@ -1,39 +1,56 @@
 import {combineReducers} from 'redux';
+import { SELECT_DETAIL } from '../constants/ActionTypes';
+import {
+ BACKEND_CONTENT,
+ FRONTEND_CONTENT,
+ TESTING_CONTENT,
+ DATABASE_CONTENT
+} from '../constants/Contents'
+
+import {
+ TESTING_PROFILE,
+ BACKEND_PROFILE,
+ DATABASE_PROFILE,
+ FRONTEND_PROFILE
+} from '../constants/Profiles'
+
 
 //reducer to store list of work details
-export const detailListReducer = () => {
+export const detailListReducer = (detail) => {
     console.log("inside detailListReducer");
-    const content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
     return ([
         {
-            profile: "Back End Developer",
-            content: content
+            profile: BACKEND_PROFILE,
+            content: BACKEND_CONTENT
         },
         {
-            profile: "Front End Developer",
-            content: content
+            profile: FRONTEND_PROFILE,
+            content: FRONTEND_CONTENT
         },
         {
-            profile: "Automation Testing",
-            content: content
+            profile: TESTING_PROFILE,
+            content: TESTING_CONTENT
         },
         {
-            profile: "Database Architecture",
-            content: content
+            profile: DATABASE_PROFILE,
+            content: DATABASE_CONTENT
         }
     ]);
 }
 
 
-export const selectedDetailReducer = (selectedDetail = null , action) => {
+export const selectedDetailReducer = (state = null , action) => {
 
     console.log("inside selectedDetailReducer");
-    if(action.type === "SELECT_DETAIL"){
-        return action.payload;
-    }
 
-    return selectedDetail;
+    switch(action.type){
+        case SELECT_DETAIL:
+            return action.payload;
+
+        default:
+            return state;
+    }
 }
 
 export const combineDetailReducer = combineReducers({

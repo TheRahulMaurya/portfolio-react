@@ -1,0 +1,25 @@
+.work-container{
+    position: relative;
+}
+
+.see-more:link .see-more:visited{
+    text-decoration: none;
+    border: none;
+    color: blue;
+    margin: 0.1rem;
+    background: none;
+    position: absolute;
+}
+
+.tip-container-right{
+    width: 10vw;
+    height: max-content;
+    word-wrap: break-word;
+    line-break: auto;
+    border-radius: 0;
+}
+
+.see-more:hover ~ .tip-container-right{
+    visibility: visible;
+}
+
