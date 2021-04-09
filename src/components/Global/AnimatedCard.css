@@ -2,7 +2,7 @@
     width: 11rem;
     height: 11.5rem;
     position: relative;
-    padding: 1%;
+    /* padding: 1%; */
     margin-left: 0;
     margin-right: 2%;
     margin-top: 3%;
@@ -121,7 +121,7 @@
 }
 
 .card-image:hover ~ .rank{
-    transform: translateX(120%);
+    transform: translateX(250%);
 }
 
 
