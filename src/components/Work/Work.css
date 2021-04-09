@@ -26,6 +26,10 @@
     margin-top: 2%;
 }
 
+.center{
+    min-width: max-content;
+    max-width: min-content;
+}
 
 
 
