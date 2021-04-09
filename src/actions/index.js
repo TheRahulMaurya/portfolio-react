@@ -1,4 +1,6 @@
-import { SELECT_DETAIL } from "../constants/ActionTypes";
+import {
+     SELECT_DETAIL,
+    } from "../constants/ActionTypes";
 
 
 // Action called when a card is selected and returns the selected detail

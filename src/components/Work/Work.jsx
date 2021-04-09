@@ -1,20 +1,35 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import {selectDetail} from '../../actions'
-import { BACKEND_IMAGE } from '../../constants/ImageResources';
 import AnimatedCard from '../Global/AnimatedCard';
-import './Work.css'
+import './Work.css';
+
 
 // Main Component for Work section
 class Work extends Component{
+
     render(){
         return(
-            <div>
-                <AnimatedCard
-                    imgSouce={BACKEND_IMAGE} 
-                    heading = {"Backend Developer"}
-                    content = {"Place some content here."}
-                />
+            <div className="work-container work-background">
+                <h1 className="work-heading">Work Profiles</h1>
+                <div className="center work-container row">
+
+                    {
+                        this.props.details.map(detail => {
+                            return <AnimatedCard
+                                className={`col span-1-of-${this.props.details.length}`}
+                                imgSouce={detail.image} 
+                                heading = {detail.profile}
+                                content = {detail.content}
+                                stars = {detail.stars}
+                                key = {detail.id}
+                                rank = {detail.id}
+                            />
+
+                        })
+                    }
+                    
+                </div>
             </div>
         )
     }

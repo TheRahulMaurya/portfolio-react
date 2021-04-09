@@ -1,25 +1,33 @@
 .work-container{
     position: relative;
+    min-height: 75vh;
+    max-height: min-content;
 }
 
-.see-more:link .see-more:visited{
-    text-decoration: none;
-    border: none;
-    color: blue;
-    margin: 0.1rem;
-    background: none;
-    position: absolute;
+.work-background{
+    background: black;
 }
 
-.tip-container-right{
-    width: 10vw;
-    height: max-content;
-    word-wrap: break-word;
-    line-break: auto;
-    border-radius: 0;
+.work-heading{
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2%;
+    text-transform: uppercase;
 }
 
-.see-more:hover ~ .tip-container-right{
-    visibility: visible;
+.work-heading::after{
+    height: 0.2rem;
+    background: #e67e22;
+    display: block;
+    content: " ";
+    width: 6%;
+    margin-left: 47%;
+    margin-top: 2%;
 }
+
+
+
+
+
 

@@ -14,6 +14,13 @@ import {
  FRONTEND_PROFILE
 } from '../constants/Profiles'
 
+import {
+ BACKEND_IMAGE,
+ DATABASE_IMAGE,
+ FRONTEND_IMAGE,
+ TESTING_IMAGE
+} from '../constants/ImageResources'
+
 
 //reducer to store list of work details
 export const detailListReducer = (detail) => {
@@ -21,20 +28,34 @@ export const detailListReducer = (detail) => {
 
     return ([
         {
+            id: 1,
             profile: BACKEND_PROFILE,
-            content: BACKEND_CONTENT
+            content: BACKEND_CONTENT,
+            image: BACKEND_IMAGE,
+            stars: 5
         },
         {
-            profile: FRONTEND_PROFILE,
-            content: FRONTEND_CONTENT
-        },
-        {
-            profile: TESTING_PROFILE,
-            content: TESTING_CONTENT
-        },
-        {
+            id: 2,
             profile: DATABASE_PROFILE,
-            content: DATABASE_CONTENT
+            content: DATABASE_CONTENT,
+            image: DATABASE_IMAGE,
+            stars: 5
+
+        },
+        {
+            id: 3,
+            profile: FRONTEND_PROFILE,
+            content: FRONTEND_CONTENT,
+            image: FRONTEND_IMAGE,
+            stars: 4
+
+        },
+        {
+            id: 4,
+            profile: TESTING_PROFILE,
+            content: TESTING_CONTENT,
+            image: TESTING_IMAGE,
+            stars: 3
         }
     ]);
 }

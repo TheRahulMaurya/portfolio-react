@@ -4,10 +4,11 @@ const Nav = () => {
     return(
         <nav>
             <Avatar />
-            <h1 className="home-heading">
+            <h1 className="nav-heading">
                 Portfolio
             </h1>
-            <ul >
+            <div className="nav-bar"></div>
+            <ul className="nav-container">
                 <li><a className = "nav-items" href="#">Home</a></li>
                 <li><a className = "nav-items" href="#">About</a></li>
                 <li><a className = "nav-items" href="#">Work</a></li>

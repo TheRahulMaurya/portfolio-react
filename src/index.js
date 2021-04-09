@@ -7,7 +7,7 @@ import {detailStore} from './stores/detailStore'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={detailStore}>
+    <Provider store={detailStore} >
       <App />
     </Provider>
   </React.StrictMode>,

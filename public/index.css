@@ -20,7 +20,7 @@ html{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 990px) {
     html{
         background: #fff;
         color:#555;
@@ -29,4 +29,4 @@ html{
         font-size: 17px;
         text-rendering: optimizeLegibility;
     }
-  }
+}
