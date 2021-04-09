@@ -1,9 +1,8 @@
 
 .explore{
-    min-height: 75vh;
     max-height: min-content;
     position: relative;
-
+    padding-bottom: 5%;
 }
 .explore-heading{
     padding: 2rem;

@@ -1,7 +1,7 @@
 .work-container{
     position: relative;
-    min-height: 75vh;
-    max-height: min-content;
+    max-height: max-content;
+    padding-bottom: 5%;
 }
 
 .work-background{
