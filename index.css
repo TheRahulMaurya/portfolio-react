@@ -1,0 +1,32 @@
+/* 
+    orange : #e67e22
+*/
+
+* {
+    margin: 0;
+}
+
+html{
+    background: #fff;
+    color:#555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 990px) {
+    html{
+        background: #fff;
+        color:#555;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        text-rendering: optimizeLegibility;
+    }
+}
